@@ -1,0 +1,131 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.header_bar {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.container_calc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 70px;
+}
+.field {
+  margin: 10px;
+  margin-bottom: 30px;
+  padding: 6px 12px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  appearance: none;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.field:hover {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+.container_calc button {
+  margin: 2px;
+  height: 70px;
+  width: 100px;
+}
+.container_calc button:hover {
+  background-color: #190482;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* CSS */
+.container_calc button {
+  align-items: center;
+  appearance: none;
+  background-color: #7752fe;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #c2d9ff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono", monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 18px;
+}
+
+.container_calc button:focus {
+  box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+}
+
+.container_calc button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.container_calc button:active {
+  box-shadow: #d6d6e7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+.history {
+  width: 420px;
+  border: 2px solid #190482;
+  border-radius: 15px;
+  height: 368px;
+  margin-left: 100px;
+  background-color: #e3ddf9;
+}
+.history h2 {
+  text-align: center;
+  background-color: #7752fe;
+  color: aliceblue;
+}
+.historycard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  height: 239px;
+}
+.historycard span {
+  margin-top: 10px;
+  font-size: medium;
+  font-weight: 500;
+  border: 2px solid #e3ddf9;
+  padding: 2px;
+  width: 400px;
+  border-radius: 2px;
+  text-align: center;
+}
